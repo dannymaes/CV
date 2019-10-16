@@ -149,6 +149,11 @@ footer {
     color: #5E1C7C;
 }
 
+.fa-git,
+.fa-github-square {
+    color: #bbb;
+}
+
 /*  media screen  */
 @media only screen and (max-width: 576px) {
     body {
