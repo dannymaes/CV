@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    background-color: #302d2dc2;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #ccc;
+}
+
+.name h1 {
+    margin-right: 40px;
+    letter-spacing: 3px;
+}
+
+.name h2 {
+    margin: 20px 0 0 40px;
+    letter-spacing: 2px;
+}
+
+#mypicture {
+    width: 150px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+header ul li img {
+    margin-right: 15px;
+}
+
+header ul li a,
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav {
+    padding: 20px 0;
+    background-color: #272727;
+}
+
+nav ul,
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.middle {
+    display: flex;
+}
+
+main {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-right: 2px solid #302d2dc2;
+    border-radius: 40px;
+}
+
+main section,
+aside section {
+    padding: 20px 10px;
+}
+
+section h3 {
+    text-align: center;
+    letter-spacing: 4px;
+    padding: 5px;
+    margin-bottom: 15px;
+    background-color: #272727;
+    color: #ccc;
+    border-radius: 5px;
+}
+
+section p {
+    padding: 10px;
+    word-spacing: .4rem;
+}
+
+aside {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-left: 2px solid #302d2dc2;
+    border-radius: 40px;
+}
+
+footer {
+    padding: 20px 0 10px 0;
+    background-color: #272727;
+    color: #ccc;
+}
+
+/*  icons   */
+.fab {
+    font-size: 2.5em;
+}
+
+.fa-ubuntu {
+    color: #DB591E;
+}
+
+.fa-html5 {
+    color: #E83C00;
+}
+
+.fa-css3-alt {
+    color: #3254BC;
+}
+
+.fa-js-square {
+    color: #FF7E00;
+}
+
+.fa-php {
+    color: #7D67B3;
+}
+
+.fa-bootstrap {
+    color: #5E1C7C;
+}
+
+/*  media screen  */
+@media only screen and (max-width: 576px) {
+    body {
+        width: 100%;
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        height: 100%;
+    }
+
+    header ul {
+        flex-direction: row;
+        padding: 20px;
+    }
+
+    .name h1 {
+        margin-right: 0;
+        letter-spacing: normal;
+    }
+
+    .name h2 {
+        margin: 0;
+        letter-spacing: normal;
+    }
+
+    .middle {
+        flex-direction: column;
+    }
+
+    main,
+    aside {
+        width: 100vw;
+        border: none;
+    }
+
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    body {
+        width: 100%;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        height: 100%;
+    }
+
+    header ul {
+        flex-direction: row;
+        padding: 20px;
+    }
+
+    .name h1 {
+        margin-right: 0;
+        letter-spacing: normal;
+    }
+
+    .name h2 {
+        margin: 0;
+        letter-spacing: normal;
+    }
+
+    .middle {
+        flex-direction: column;
+    }
+
+    main,
+    aside {
+        width: 100vw;
+        border: none;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    body {
+        width: 100%;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        height: 100%;
+    }
+
+    header ul {
+        flex-direction: row;
+        padding: 20px;
+    }
+
+    .name h1 {
+        margin-right: 0;
+        letter-spacing: normal;
+    }
+
+    .name h2 {
+        margin: 0;
+        letter-spacing: normal;
+    }
+
+    .middle {
+        flex-direction: column;
+    }
+
+    main,
+    aside {
+        width: 100vw;
+        border: none;
+    }
+}
+
+/* print */
+@media print {
+    header {
+        height: 15%;
+    }
+
+    section p {
+        padding: 5px;
+        word-spacing: normal;
+    }
+
+    .middle {
+        flex-direction: column;
+    }
+
+    .name h1 {
+        margin-right: 0;
+        letter-spacing: normal;
+    }
+
+    .name h2 {
+        margin: 0;
+        letter-spacing: normal;
+    }
+
+    section h3 {
+        text-align: center;
+        letter-spacing: normal;
+        padding: 0;
+        margin-bottom: 5px;
+        background-color: #272727;
+        color: #ccc;
+        border-radius: 5px;
+    }
+
+    main,
+    aside {
+        width: 100vw;
+        border: none;
+    }
+
+    aside {
+        flex-direction: row;
+    }
+
+    main section,
+    aside section {
+        padding: 8px;
+    }
+
+    .opleiding,
+    .ervaring {
+        width: 50%;
+    }
+}
