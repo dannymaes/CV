@@ -326,4 +326,8 @@ footer {
     .ervaring {
         width: 50%;
     }
+
+    .git, .linkd{
+      display: none;
+    }
 }
