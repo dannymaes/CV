@@ -280,6 +280,9 @@ footer {
     header {
         height: 15%;
     }
+    nav{
+        margin: 20px auto;
+    }
 
     section p {
         padding: 5px;
@@ -288,6 +291,7 @@ footer {
 
     .middle {
         flex-direction: column;
+        margin-bottom: 15px;
     }
 
     .name h1 {
@@ -314,11 +318,12 @@ footer {
     aside {
         width: 100vw;
         border: none;
-        margin-top:-30px;
+        
     }
 
     aside {
         flex-direction: row;
+        margin: 5px 25px;
     }
 
     main section,
@@ -334,11 +339,16 @@ footer {
     .git, .linkd{
       display: none;
     }
+    .car{
+        margin-top:10px;
+    }
+    .qr-codes{
+        margin-top:25px;
+    }
     .qr-code{
       display: inline-block;
       height: 100px;
       width: 100px;
-      margin-top: -55px;
 
     }
 }
