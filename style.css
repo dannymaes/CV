@@ -291,7 +291,7 @@ footer {
 
     .middle {
         flex-direction: column;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 
     .name h1 {
@@ -340,10 +340,10 @@ footer {
       display: none;
     }
     .car{
-        margin-top:10px;
+        margin-top:2px;
     }
     .qr-codes{
-        margin-top:25px;
+        margin-top:10px;
     }
     .qr-code{
       display: inline-block;
