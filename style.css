@@ -119,6 +119,9 @@ footer {
     background-color: #272727;
     color: #ccc;
 }
+.qr-code{
+  display: none;
+}
 
 /*  icons   */
 .fab {
@@ -311,6 +314,7 @@ footer {
     aside {
         width: 100vw;
         border: none;
+        margin-top:-30px;
     }
 
     aside {
@@ -329,5 +333,12 @@ footer {
 
     .git, .linkd{
       display: none;
+    }
+    .qr-code{
+      display: inline-block;
+      height: 100px;
+      width: 100px;
+      margin-top: -55px;
+
     }
 }
